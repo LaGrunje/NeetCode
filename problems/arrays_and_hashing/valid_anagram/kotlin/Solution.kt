@@ -1,7 +1,7 @@
 class Solution {
     fun isAnagram(s: String, t: String): Boolean {
         if (s.length != t.length) return false
-        var dictionary: IntArray = IntArray(26) { 0 }
+        val dictionary = IntArray(26) { 0 }
         for (ind in s.indices) {
             dictionary[s[ind] - 'a']++
             dictionary[t[ind] - 'a']--
